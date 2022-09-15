@@ -2,6 +2,10 @@
 2. git config --global user.name "..."
 
 
+
+***********************************************************************************************************
+Basic commands
+
 1. git init
 2. git add [filename] || -A
 3. git status
@@ -13,6 +17,8 @@
 9. touch .gitignore (create a .gitignore file)
 
 
+
+***********************************************************************************************************
 extra commands
 
 if green M display that means modified in staging area
@@ -33,10 +39,13 @@ else modified in working tree
 14. git remote -v ( show all the remote with url)
 15. git push ( push your all new commits in your repository )
 15. git show [commitId] ( check what changes you did )
-16. git reset --hard
-17. git reset --soft
+16. git reset --hard HEAD^ ( delete recent or last commit but the changes remain the same as previous) 
+17. git reset --soft HEAD^  (undo last commit) or (delete the last commit and staged your file for change the commit)
+18. 17. git reset --soft [commitId of commit from where u delete the commits]  (undo commit)  or (delete the last commit and staged your file for change the commit)
 
 
+
+***********************************************************************************************************
 branch commands
 1. git branch (show all the branches)
 2. git branch master2 ( make a new branch with name master2 and basically its a copy of a master branch )
