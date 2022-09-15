@@ -41,7 +41,9 @@ else modified in working tree
 15. git show [commitId] ( check what changes you did )
 16. git reset --hard HEAD^ ( delete recent or last commit but the changes remain the same as previous) 
 17. git reset --soft HEAD^  (undo last commit) or (delete the last commit and staged your file for change the commit)
-18. 17. git reset --soft [commitId of commit from where u delete the commits]  (undo commit)  or (delete the last commit and staged your file for change the commit)
+18. git reset --soft [commitId of commit from where u delete the commits]  (undo commit)  or (delete the last commit and staged your file for change the commit)
+19. git restore --staged [fileName] ( remove file from staging area )
+20. git restore [fileName] ( remove unTracked file )
 
 
 
