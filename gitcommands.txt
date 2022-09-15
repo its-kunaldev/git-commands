@@ -32,6 +32,9 @@ else modified in working tree
 13. git remote ( show all the remote)
 14. git remote -v ( show all the remote with url)
 15. git push ( push your all new commits in your repository )
+15. git show [commitId] ( check what changes you did )
+16. git reset --hard
+17. git reset --soft
 
 
 branch commands
@@ -39,4 +42,5 @@ branch commands
 2. git branch master2 ( make a new branch with name master2 and basically its a copy of a master branch )
 3. git checkout master2 ( switch from master branch to master2 )
 4. git merge master2 ( merge master2 in master branch)
-5. git checkout -b [branchname] ( create a new branch and automatically switch to that branch)
+5. git checkout -b [branchName] ( create a new branch and automatically switch to that branch)
+6. git branch -d [branchName] ( delete the branch )
