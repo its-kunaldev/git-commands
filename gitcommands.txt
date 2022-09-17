@@ -1,10 +1,13 @@
+# AUTHENTICATION
+
 1. git config --global user.email "..."
 2. git config --global user.name "..."
 
 
 
+
 ***********************************************************************************************************
-Basic commands
+# BASIC COMMANDS
 
 1. git init
 2. git add [filename] || -A
@@ -18,8 +21,36 @@ Basic commands
 
 
 
+
 ***********************************************************************************************************
-extra commands
+# BRANCH COMMANDS
+
+1. git branch (show all the branches)
+2. git branch master2 ( make a new branch with name master2 and basically its a copy of a master branch )
+3. git checkout master2 ( switch from master branch to master2 )
+4. git merge master2 ( merge master2 in master branch)
+5. git checkout -b [branchName] ( create a new branch and automatically switch to that branch)
+6. git branch -d [branchName] ( delete the branch )
+
+
+
+
+***********************************************************************************************************
+# EDIT COMMITS COMMANDS
+
+1. git reset --hard HEAD^ ( delete recent or last commit but the changes remain the same as previous) 
+2. git reset --soft HEAD^  (undo last commit) or (delete the last commit and staged your file for change the commit)
+3. git reset --soft [commitId of commit from where u delete the commits]  (undo commit)  or (delete the last commit and staged your file for change the commit)
+4. git restore --staged [fileName] ( remove file from staging area )
+5. git restore [fileName] ( remove unTracked file ) 
+6. git show [commitId] ( check what changes you did )
+
+
+
+
+
+***********************************************************************************************************
+# EXTRA COMMANDS
 
 if green M display that means modified in staging area
 else modified in working tree
@@ -38,20 +69,4 @@ else modified in working tree
 13. git remote ( show all the remote)
 14. git remote -v ( show all the remote with url)
 15. git push ( push your all new commits in your repository )
-15. git show [commitId] ( check what changes you did )
-16. git reset --hard HEAD^ ( delete recent or last commit but the changes remain the same as previous) 
-17. git reset --soft HEAD^  (undo last commit) or (delete the last commit and staged your file for change the commit)
-18. git reset --soft [commitId of commit from where u delete the commits]  (undo commit)  or (delete the last commit and staged your file for change the commit)
-19. git restore --staged [fileName] ( remove file from staging area )
-20. git restore [fileName] ( remove unTracked file )
 
-
-
-***********************************************************************************************************
-branch commands
-1. git branch (show all the branches)
-2. git branch master2 ( make a new branch with name master2 and basically its a copy of a master branch )
-3. git checkout master2 ( switch from master branch to master2 )
-4. git merge master2 ( merge master2 in master branch)
-5. git checkout -b [branchName] ( create a new branch and automatically switch to that branch)
-6. git branch -d [branchName] ( delete the branch )
